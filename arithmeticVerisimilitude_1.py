@@ -99,7 +99,9 @@ parser.add_argument("showMax", type=int, help="maximum number of right answers t
 
 args = parser.parse_args()
 
-main(args.minimum,args.maximum,args.step,args.showMin,args.showMax)
+newmax = args.maximum + 1
+
+main(args.minimum,newmax,args.step,args.showMin,args.showMax)
 
 
 
